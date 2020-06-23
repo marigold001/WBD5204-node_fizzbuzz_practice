@@ -5,7 +5,7 @@ app.listen(3000, () => {console.log("Connected")})
 
 app.get('/', function(req,res) {
     res.send("Hello World")
-    console.log(req)
+    console.log(req.get('user-agent'))
 })
 
 app.get('/loop', function(req,res) {
